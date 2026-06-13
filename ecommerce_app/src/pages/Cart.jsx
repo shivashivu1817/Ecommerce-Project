@@ -5,9 +5,9 @@ function Cart() {
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
 
-  useEffect(() => {
-    fetchCart();
-  }, []);
+ useEffect(() => {
+  fetchCart();
+}, [fetchCart]);
 
   const fetchCart = async () => {
     try {
